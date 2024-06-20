@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&amp;family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"
+    integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ=="
+    crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com/3.4.1?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>Digital Media Project</title>
+  {% load static %}
+</head>
+<body>
+  <div>
+    <div class="canvas-paper"></div>
+    <div class="canvas-paper">
+      <div class="bg-white pt-4 pr-8 pb-4 pl-8">
+        <nav class="w-full">
+          <div class="w-full justify-between md:flex-row mt-auto mr-auto mb-auto ml-auto flex max-w-screen-2xl">
+            <div class="bg-white justify-between items-center mt-2 mb-2 md:m-0 md:flex flex flex-row hidden">
+              <img src="{% static 'images/casque.png' %}" class="w-12 md:w-16">
+            </div>
+            <div class="justify-center items-center md:order-none flex flex-row order-first"></div>
+            <div class="bg-white justify-center items-center md:m-0 md:flex flex flex-row hidden">
+              <a href="#video" fontfamily="Raleway" class="text-gray-600 text-center mr-6 font-medium text-base">Video</a>
+              <a href="#audio-track" fontfamily="Raleway" class="text-gray-600 text-center mr-6 font-medium text-lg">Audio track</a>
+              <a href="#team" fontfamily="Raleway" class="text-gray-600 text-center font-medium text-lg">Team</a>
+              <a href="{% url 'upload_music' %}" fontfamily="Raleway" class="text-gray-600 text-center mr-6 font-medium text-base">Upload Music</a>
+              <a href="{% url 'upload_video' %}" fontfamily="Raleway" class="text-gray-600 text-center font-medium text-lg">Upload Video</a>
+            </div>
+            <div class="md:hidden ml-auto items-center flex">
+              <div class="outline-none mobile-menu-button">
+                <svg id="Windframe_lC9LPsJr3" fill="none" strokelinecap="round" strokewidth="2" viewBox="0 0 24 24"
+                  stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-green-500">
+                  <path id="Windframe_6a5PdDAQ-4d" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="md:hidden hidden mobile-menu">
+            <div>
+              <a href="#video" fontfamily="Raleway" class="text-gray-600 text-center mr-6 font-medium text-base">Video</a>
+              <a href="#audio-track" fontfamily="Raleway" class="text-gray-600 text-center mr-6 font-medium text-lg">Audio track</a>
+              <a href="#team" fontfamily="Raleway" class="text-gray-600 text-center font-medium text-lg">Team</a>
+              <a href="{% url 'upload_music' %}" fontfamily="Raleway" class="text-gray-600 text-center mr-6 font-medium text-base">Upload Music</a>
+              <a href="{% url 'upload_video' %}" fontfamily="Raleway" class="text-gray-600 text-center font-medium text-lg">Upload Video</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="video" class="bg-white pt-16 pr-4 pb-16 pl-4 mr-auto ml-auto items-center lg:flex-row lg:py-32 xl:py-48 md:px-8 flex flex-col relative">
+        <div class="justify-center items-center w-full h-full lg:w-1/2 lg:justify-end lg:bottom-0 lg:left-0 lg:items-center flex">
+          <img src="{% static 'images/1.jpg' %}" class="object-contain object-top w-full h-auto lg:w-auto lg:h-full rounded-md">
+        </div>
+        <div class="mr-auto ml-auto justify-end xl:pr-32 lg:max-w-screen-xl flex relative max-w-xl">
+          <div class="mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
+            <div class="mb-6 max-w-xl">
+              <p class="pt-1 pr-3 pb-1 pl-3 mb-4 text-pink-200 bg-pink-500 rounded-2xl text-xs font-semibold tracking-wider inline-block uppercase">Brand new</p>
+              <div class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mb-6 max-w-lg">
+                <p class="text-gray-900 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">Write anything and start</p>
+                <p class="text-gray-900 text-3xl font-bold tracking-tight mr-2 sm:text-4xl sm:leading-none inline-block">being</p>
+                <p class="text-blue-700 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none inline-block">creative</p>
+              </div>
+              <p class="text-gray-700 text-base md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
+            <div class="md:flex-row flex flex-col">
+              <input type="text" placeholder="Email Address" fontfamily="Raleway" class="focus:border-blue-700 focus:outline-none focus:shadow-outline flex-grow transition duration-200 appearance-none border-2 border-gray-300 md:mr-2 text-black bg-white font-normal w-full h-12 text-xs rounded-md pt-3 pr-4 pb-3 pl-4 mb-2 shadow-sm">
+            </div>
+            <div class="items-center mt-4 mr-0 mb-0 ml-0 flex">
+              <button fontfamily="Arial" type="submit" class="transition duration-200 hover:bg-blue-900 focus:shadow-outline focus:outline-none inline-flex bg-blue-700 text-white font-semibold tracking-wide h-12 rounded-md shadow-md items-center justify-center pr-6 pl-6 mr-6">Get Early Access</button>
+              <button fontfamily="Arial" type="submit" class="transition duration-200 hover:bg-blue-50 focus:shadow-outline focus:outline-none inline-flex bg-transparent text-blue-700 font-semibold tracking-wide h-12 rounded-md shadow-md items-center justify-center pr-6 pl-6 mr-6">Request a Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section pour afficher la dernière vidéo téléchargée -->
+      <div id="audio-track" class="bg-white pt-16 pr-4 pb-16 pl-4 md:px-24 lg:px-8 lg:py-20">
+        <div class="mr-auto ml-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+          <div class="mr-auto mb-10 ml-auto md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 flex flex-col max-w-xl">
+            <div>
+              <p class="mb-2 pt-3 pr-3 pb-3 pl-3 text-center text-white font-semibold bg-blue-700 tracking-wider text-xs rounded-full inline-block uppercase">Video product</p>
+            </div>
+            <div class="mt-6 mr-auto mb-6 ml-auto text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl max-w-lg font-sans">
+              <div class="inline relative">
+                <span class="items-center justify-center w-32 text-blue-300 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block flex absolute top-0 left-0 z-0 hidden -mt-8 -ml-20">
+                  <svg viewBox="0 0 52 24" fill="currentColor" class="w-full h-full" id="Windframe_V24BckzmH">
+                    <defs>
+                      <pattern id="9ef1ff62-feb2-41fe-8163-772b4c79de7b" x="0" y="0" width=".135" height=".30">
+                        <circle cx="1" cy="1" r=".7"></circle>
+                      </pattern>
+                    </defs>
+                    <rect fill="url(#9ef1ff62-feb2-41fe-8163-772b4c79de7b)" width="52" height="24"></rect>
+                  </svg>
+                </span>
+                <p class="font-bold text-3xl tracking-tight sm:text-4xl sm:leading-none inline font-sans">Improve</p>
+              </div>
+              <p class="font-bold text-3xl tracking-tight ml-1 sm:text-4xl sm:leading-none inline font-sans">your day</p>
+              <p class="text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none font-sans">to the MAX with Music</p>
+            </div>
+            <p class="text-base text-center text-gray-700 md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+          <div class="mr-auto ml-auto lg:max-w-2xl relative">
+            <div class="w-full relative transition-shadow duration-300 hover:shadow-xl">
+              {% if last_video %}
+                <video controls class="w-full h-auto">
+                  <source src="{{ last_video.file.url }}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              {% else %}
+                <p class="text-center text-gray-500">No videos uploaded yet.</p>
+              {% endif %}
+            </div>
+            <audio class="mt-6 mx-auto w-full" controls>
+              {% if last_audio %}
+                <source src="{{ last_audio.file.url }}" type="audio/mpeg">
+              {% else %}
+                <p class="text-center text-gray-500">No audios uploaded yet.</p>
+              {% endif %}
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+      <!-- Fin de la section pour afficher la dernière vidéo et audio téléchargées -->
+
+      <div id="team" class="bg-white py-24 sm:py-32">
+        <div class="flex flex-col items-center justify-center">
+          <div class="max-w-2xl text-center">
+            <p class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white min-h-screen p-6">
+    <div class="mx-auto md:grid-cols-2 max-w-4xl grid grid-cols-1 gap-6">
+      <div class="bg-gray-50 rounded-lg shadow-md items-center border border-gray-300 p-4 flex flex-col">
+        <img src="{% static 'images/2.png' %}" alt="Team member 1" class="w-2/3 mb-4">
+        <p class="text-center text-xl font-medium text-gray-900 mb-2">Aubin KAMTSA</p>
+        <p class="text-center text-gray-500 mb-4">CO-CEO</p>
+        <div class="justify-center flex space-x-4">
+          <a href="https://x.com/KamtsaAubin" class="text-indigo-600 hover:text-indigo-700">
+            <div class="fab fa-twitter"></div>
+            Twitter
+          </a>
+          <a href="www.linkedin.com/in/aubin-kamtsa-016618297" class="text-indigo-600 hover:text-indigo-700">
+            <div class="fab fa-linkedin"></div>
+            LinkedIn
+          </a>
+          <a href="https://github.com/lemale237?tab=repositories" class="text-indigo-600 hover:text-indigo-700">
+            <div class="fab fa-github"></div>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-lg shadow-md items-center border border-gray-300 p-4 flex flex-col">
+        <img src="{% static 'images/3.jpeg' %}" alt="Team member 2" class="w-2/3 mb-4">
+        <p class="text-center text-xl font-medium text-gray-900 mb-2">Darry FONKOU</p>
+        <p class="text-center text-gray-500 mb-4">CO-CEO</p>
+        <div class="justify-center flex space-x-4">
+          <a href="#" class="text-indigo-600 hover:text-indigo-700">
+            <div class="fab fa-twitter"></div>
+            Twitter
+          </a>
+          <a href="#" class="text-indigo-600 hover:text-indigo-700">
+            <div class="fab fa-linkedin"></div>
+            LinkedIn
+          </a>
+          <a href="#" class="text-indigo-600 hover:text-indigo-700">
+            <div class="fab fa-github"></div>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const btn = document.querySelector(".mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+<footer class="bg-white text-center p-2 mt-0">
+  <p class="text-gray-700">© 2023 MyCompany. All rights reserved.</p>
+  <div class="flex justify-center space-x-4">
+    <a href="mailto:contact@mycompany.com" class="text-blue-600 hover:underline">contact@mycompany.com</a>
+    <span>|</span>
+    <a href="tel:+123456789" class="text-blue-600 hover:underline">+123456789</a>
+  </div>
+  <div class="mt-1">
+    <a href="https://twitter.com/mycompany" class="text-blue-600 hover:underline mx-2">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://facebook.com/mycompany" class="text-blue-600 hover:underline mx-2">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/mycompany" class="text-blue-600 hover:underline mx-2">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  <div class="mt-1">
+    <a href="/legal-notice.html" class="text-gray-600 hover:underline text-sm">Legal Notice</a>
+    <span>|</span>
+    <a href="/privacy-policy.html" class="text-gray-600 hover:underline text-sm">Privacy Policy</a>
+  </div>
+</footer>
+</html>
